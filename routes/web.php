@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -15,6 +14,9 @@ Route::get('/registration', function () {
 Route::get('/forgot-password', function () {
     return view('auth.forgot-password');
 })->name('forgot-password');
+Route::get('/reset-mail-success', function () {
+    return view('auth.reset-mail-success');
+})->name('reset-mail-success');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('home', function () {
