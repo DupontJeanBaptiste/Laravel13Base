@@ -2,9 +2,10 @@
 
 This is a base for any laravel 13 projects, included :
 - Docker env with Sail
-- css build with Vite
-- Login process with Fortify
-- User role and permissions with Spatie
+- Css build with Vite
+- Login process with Fortify -> https://laravel.com/docs/13.x/fortify
+- User role and permissions with Spatie -> https://spatie.be/docs/laravel-permission/v7/basic-usage/basic-usage
+- Cookie consent by devrabiul -> https://github.com/devrabiul/laravel-cookie-consent
 
 ## Requierments
 
