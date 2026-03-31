@@ -13,7 +13,7 @@ This is a base for any laravel 13 projects, included :
 sudo apt update && sudo apt upgrade -y
 ```
 ```bash
-sudo apt install php8.3-cli php8.3-common php8.3-mbstring php8.3-xml php8.3-bcmath php8.3-curl php8.3-mysql php8.3-zip php8.3-readline php8.3-gd php8.3-pgsql unzip curl git composer -y 
+sudo apt install php8.4-cli php8.4-common php8.4-mbstring php8.4-xml php8.4-bcmath php8.4-curl php8.4-mysql php8.4-zip php8.4-readline php8.4-gd php8.4-pgsql unzip curl git composer -y
 ```
 You will also need to make an alias to use Sail commands :
 On my zsh config into .zshrc:
