@@ -4,7 +4,7 @@ This is a base for any laravel 13 projects, included :
 - Docker env with Sail
 - css build with Vite
 - Login process with Fortify
-- User role manager with Spatie
+- User role and permissions with Spatie
 
 ## Requierments
 
@@ -66,6 +66,11 @@ sail up -d
 Make laravel migration
 ```bash
 sail artisan mirgate
+```
+
+Run seeder role (contain admin and user role, no permissions register)
+```bash
+php artisan db:seed --class=RolePermissionSeeder
 ```
 
 Run the first vite build
