@@ -1,12 +1,12 @@
 <?php
 
-namespace App\View\Components\layouts\alerts;
+namespace App\View\Components\partials;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Danger extends Component
+class Footer extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class Danger extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.layouts.alerts.danger');
+        return view('components.partials.footer');
     }
 }

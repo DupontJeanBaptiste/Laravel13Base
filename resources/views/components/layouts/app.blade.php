@@ -1,34 +1,38 @@
+<!-- components/layouts/app.blade.php -->
 <!DOCTYPE html>
 <html lang="en" class="h-full bg-gray-900">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mywebsite</title>
+    <title>{{ $title ?? config('app.name') }}</title>
     {!! CookieConsent::styles() !!}
-    @vite('resources/css/app.css')
-    @vite('resources/js/app.js')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="h-full">
     <header>
-        @yield('header')
+        <x-partials.navbar />
     </header>
-    <main>
-        <x-layouts.sidebar />
-        <div class="p-4 sm:ml-64">
+    <main class="flex">
+        <x-partials.sidebar />
+        <div class="flex-1 p-4 sm:ml-64">
             <div class="p-4 border-1 border-default border-dashed rounded-base">
-                @yield('main')
+                {{ $slot }}
             </div>
             @if ($errors->any())
+            <ul>
                 @foreach ($errors->all() as $error)
-                    <x-layouts.alerts.danger message="{{ $error }}" />
+                    <li>
+                        <x-ui.alerts.danger message="{{ $error }}" />
+                    </li>    
                 @endforeach
+            </ul>
             @endif
         </div>
     </main>
     <footer>
-        @yield('footer')
+        <x-partials.footer />
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
     {!! CookieConsent::scripts() !!}
