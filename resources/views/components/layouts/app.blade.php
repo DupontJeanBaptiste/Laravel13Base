@@ -14,9 +14,8 @@
     <header>
         <x-partials.navbar />
     </header>
-    <main class="flex">
-        <x-partials.sidebar />
-        <div class="flex-1 p-4 sm:ml-64">
+    <main class="flex justify-center">
+        {{-- <x-partials.sidebar /> --}}
             <div class="p-4 border-1 border-default border-dashed rounded-base">
                 {{ $slot }}
             </div>
@@ -29,7 +28,6 @@
                 @endforeach
             </ul>
             @endif
-        </div>
     </main>
     <footer>
         <x-partials.footer />
