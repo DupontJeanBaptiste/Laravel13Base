@@ -1,6 +1,7 @@
-@extends('components.layouts.default')
-
-@section('main')
+<x-layouts.app>
+    <x-slot:title>
+        Forgot Password
+    </x-slot>
     <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
             <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"
@@ -20,4 +21,4 @@
             </form>
         </div>
     </div>
-@endsection
+</x-layouts.app>

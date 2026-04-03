@@ -1,13 +1,13 @@
 <?php
 
-namespace App\View\Components\layouts\sidebar;
+namespace App\View\Components\sidebar;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use Symfony\Component\Routing\Route;
 
-class Button extends Component
+class SidebarLink extends Component
 {
     /**
      * Create a new component instance.
@@ -25,6 +25,6 @@ class Button extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.layouts.sidebar.button');
+        return view('components.sidebar.sidebar-link');
     }
 }

@@ -1,6 +1,8 @@
-@extends('components.layouts.default')
+<x-layouts.app>
+    <x-slot:title>
+        Welcome
+    </x-slot>
 
-@section('main')
     <div class="flex justify-center">
         <div
             class="bg-neutral-primary-soft block max-w-sm p-6 border border-default rounded-base shadow-xs hover:bg-neutral-secondary-medium">
@@ -8,4 +10,4 @@
             <p class="text-body">Please login in to see your collection.</p>
         </div>
     </div>
-@endsection
+</x-layouts.app>
