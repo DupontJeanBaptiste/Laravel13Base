@@ -16,7 +16,7 @@
     </header>
     <main class="flex justify-center">
         {{-- <x-partials.sidebar /> --}}
-            <div class="p-4 border-1 border-default border-dashed rounded-base">
+            <div class="p-4 border-1 border-default border-dashed rounded-base my-2">
                 {{ $slot }}
             </div>
             @if ($errors->any())
