@@ -17,7 +17,6 @@ class SidebarLink extends Component
         public string $d,
         public string $message
     ) {
-        $this->route = route($route);
     }
 
     /**
